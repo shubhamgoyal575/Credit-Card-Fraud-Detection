@@ -22,10 +22,10 @@ The dataset used for this project is the **Credit Card Fraud Detection dataset**
 
 ### 3️⃣ Model Selection & Training
 We experimented with various machine learning models:
-✅ **Logistic Regression**
 ✅ **Random Forest**
-✅ **Support Vector Machine (SVM)**
+✅ **AdaBoost**
 ✅ **XGBoost**
+✅ **Lightbgm**
 ✅ **Neural Networks (Deep Learning Approach)**
 
 ### 4️⃣ Evaluation Metrics
@@ -45,15 +45,11 @@ This project utilizes **AWS SageMaker** for deploying the trained fraud detectio
 - Deploying the trained model as a **real-time endpoint**.
 - Using **SageMaker Inference** for making predictions on new transactions.
 
-### **3️⃣ Monitoring & Optimization**
-- Implementing **CloudWatch** to monitor performance.
-- **Fine-tuning** the model based on new incoming fraud patterns.
 
 ## 📊 Results
 - The **best model achieved:**
-  - **X% Accuracy**
-  - **Y% Recall** (to reduce false negatives)
-  - **Z% F1-score**
+  - **88.1% roc auc score** 
+  - **85.2% F1-score**
 - **Random Forest** and **XGBoost** were the most balanced models in terms of performance.
 - **Neural Networks** performed exceptionally well in high-computational environments with **AUC close to 0.999**.
 
@@ -69,7 +65,6 @@ Contributions are **welcome**! Feel free to submit **pull requests** or raise **
 This project is licensed under the **MIT License**.
 
 ## 📢 Acknowledgments
-- [Kaggle - Credit Card Fraud Detection Dataset](https://www.kaggle.com/mlg-ulb/creditcardfraud)
 - Open-source **Machine Learning & Data Science Communities**
 
 ---
